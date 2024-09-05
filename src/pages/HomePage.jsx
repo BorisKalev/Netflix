@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 const HomePage = () => {
   return (
     <>
@@ -107,6 +109,8 @@ const HomePage = () => {
           />
         </div>
       </div>
+      <div className="bg-gray-500 w-full h-[5px] opacity-50 mt-20" />
+      <Footer />
     </>
   );
 };
