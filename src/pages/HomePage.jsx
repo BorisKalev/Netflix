@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
-
+import vid1 from "../assets/frontend_public_hero-vid.m4v";
+import vid2 from "../assets/frontend_public_video-devices.m4v";
 const HomePage = () => {
   return (
     <>
@@ -65,11 +66,22 @@ const HomePage = () => {
               Blu-ray players, and more.
             </p>
           </div>
-          <img
-            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
-            alt="TV"
-            className="w-auto h-auto sm:max-w-[400px] xl:max-w-[550px]"
-          />
+          <div className="flex-1 relative">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+              alt="TV"
+              className="w-auto h-auto sm:max-w-[400px] xl:max-w-[550px] z-20 relative"
+            />
+            <video
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-1/2 z-10"
+              playsInline
+              autoPlay={true}
+              muted
+              loop
+            >
+              <source src={vid1} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
 
@@ -77,10 +89,23 @@ const HomePage = () => {
 
       <div className="flex justify-center text-white items-center my-20">
         <div className="flex justify-between items-center max-w-[1200px]">
-          <img
-            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
-            alt="computer ipad and iphone"
-          />
+          <div className="flex-1 relative">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+              alt="computer ipad and iphone"
+              className="relative z-10"
+            />
+            <video
+              className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 h-1/2 w-[340px]"
+              playsInline
+              autoPlay={true}
+              muted
+              loop
+            >
+              <source src={vid2} type="video/mp4" />
+            </video>
+          </div>
+
           <div className="flex flex-col space-y-4">
             <h1 className="font-bold text-5xl">Watch everywhere</h1>
             <h2 className="text-xl">
