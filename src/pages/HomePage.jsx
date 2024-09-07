@@ -1,6 +1,9 @@
 import Footer from "../components/Footer";
 import vid1 from "../assets/frontend_public_hero-vid.m4v";
 import vid2 from "../assets/frontend_public_video-devices.m4v";
+import st1 from "../assets/stranger-things-lg.png";
+import st2 from "../assets/stranger-things-sm.png";
+import gif from "../assets/download-icon.gif";
 const HomePage = () => {
   return (
     <>
@@ -56,9 +59,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
+      {/*First section*/}
       <div className="flex justify-center text-white w-full  mt-10 h-[430px]">
-        <div className="flex text-white w-full max-w-[1200px] px-4 xl:px-0 justify-between items-center">
+        <div className="flex text-white w-full max-w-6xl  xl:px-0 justify-between items-center">
           <div className="flex flex-col w-full sm:ml-8 space-y-4">
             <h1 className="font-bold text-5xl">Enjoy on your TV</h1>
             <p className="text-xl">
@@ -85,10 +88,43 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="bg-gray-500 w-full h-[5px] opacity-50 mt-20" />
+      <div className="relative bg-gray-500 w-full h-[5px] opacity-50 mt-20 z-10" />
+      {/*Second section*/}
+      <div className="py-10 bg-black text-white h-[430px] px-10 mr-24">
+        <div className="flex justify-between text-white items-center h-full max-w-6xl mx-auto">
+          <div className="flex-1 relative">
+            <div className="relative">
+              <img src={st1} alt="Stranger Things img" className="mt-4 z-0" />
+            </div>
+            <div className="flex items-center gap-2 absolute bottom-5 left-1/2 -translate-x-1/2 bg-black w-3/4 lg:w-1/2 h-24 border border-slate-500 rounded-md px-2">
+              <img src={st2} alt="image" className="h-full py-2" />
+              <div className="flex justify-between items-center w-full">
+                <div className="flex flex-col gap-0">
+                  <span className="text-md lg:text-lg font-bold">
+                    Stranger Things
+                  </span>
+                  <span className="text-sm text-blue-500">Downloading ...</span>
+                </div>
+                <img src={gif} alt="download" className="h-12" />
+              </div>
+            </div>
+          </div>
 
+          <div className="flex flex-col space-y-4 md:text-left">
+            <h2 className="text-4xl md-text-5xl font-extrabold mb-4 text-balance">
+              Download your shows to watch offline
+            </h2>
+            <p className="text-lg md:text-xl">
+              Save your favorites easily and always have something to watch.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gray-500 w-full h-[5px] opacity-50 mt-20" />
+      {/*Third section*/}
       <div className="flex justify-center text-white items-center my-20">
-        <div className="flex justify-between items-center max-w-[1200px]">
+        <div className="flex justify-between items-center max-w-6xl">
           <div className="flex-1 relative">
             <img
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
@@ -106,7 +142,7 @@ const HomePage = () => {
             </video>
           </div>
 
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-4 md:text-left">
             <h1 className="font-bold text-5xl">Watch everywhere</h1>
             <h2 className="text-xl">
               Stream unlimited movies and TV shows on your phone, tablet,
@@ -117,9 +153,9 @@ const HomePage = () => {
       </div>
 
       <div className="bg-gray-500 w-full h-[5px] opacity-50 mt-20" />
-
+      {/*Fourth section*/}
       <div className="flex text-white justify-center items-center my-20">
-        <div className="flex justify-between items-center mx-10 max-w-[1200px]">
+        <div className="flex justify-between items-center max-w-6xl">
           <div className="flex flex-col mr-10 space-y-4">
             <h1 className="font-bold text-5xl">Create profiles for kids</h1>
 
