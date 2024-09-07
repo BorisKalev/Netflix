@@ -132,7 +132,7 @@ const HomePage = () => {
               className="relative z-10"
             />
             <video
-              className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 h-1/2 w-[340px]"
+              className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 h-1/2 w-[300px]"
               playsInline
               autoPlay={true}
               muted
